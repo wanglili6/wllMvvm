@@ -1,0 +1,80 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.wll.examplemvvm"
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    //打开databinding
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+    //okhttp、retrofit、rxjava
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.7'
+
+    //放着没有及时回收造成RxJava内存泄漏
+    implementation 'com.trello.rxlifecycle2:rxlifecycle-components:2.1.0'
+
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
+
+    //Room的依赖引用
+    implementation 'androidx.room:room-runtime:2.0.0'
+    annotationProcessor 'androidx.room:room-compiler:2.0.0'
+
+    //Room配合RxJava使用
+    implementation 'androidx.room:room-rxjava2:2.0.0'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
+
+    //广告banner
+    implementation 'com.youth.banner:banner:1.4.10'
+
+    //glide
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.github.lihangleo2:MoreAboutRecyclerView:1.0.1'
+    //阴影
+    implementation 'com.github.lihangleo2:ShadowLayout:2.1.4'
+    implementation 'com.github.lihangleo2:SmartLoadingView:1.3.2'
+
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0'
+    //svg
+    implementation 'com.jaredrummler:animated-svg-view:1.0.5'
+    //沉浸式状态栏
+    implementation 'com.gyf.barlibrary:barlibrary:2.3.0'
+    //管理cookieJar的
+    implementation 'com.github.franmontiel:PersistentCookieJar:v1.0.1'
+    //eventbus
+    implementation 'org.greenrobot:eventbus:3.0.0'
+
+    //tablayout
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.0.2@aar'
+    implementation files('libs/tbs_sdk_thirdapp_v4.3.0.1148_43697_sharewithdownloadwithfile_withoutGame_obfs_20190805_175505.jar')
+
+
+}

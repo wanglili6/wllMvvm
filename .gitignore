@@ -13,3 +13,9 @@
 .externalNativeBuild
 .cxx
 bulild
+/gradle
+gradle
+*.idea
+/.idea
+*.git
+/.git
