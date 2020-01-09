@@ -14,7 +14,8 @@ import com.wll.examplemvvm.ui.homefrgment.HomeFragment;
 import java.util.ArrayList;
 
 /**
- *
+ * @author wll
+ * @description: 主页面
  */
 public class MainActivity extends BaseActivity<MainViewModel, ActivityMainBinding> {
     //存放fragment的列表
