@@ -1,4 +1,4 @@
-package com.wll.examplemvvm.ui.homefrgment.newslist;
+package com.wll.examplemvvm.ui.homefrgment.newslist.adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,7 +11,7 @@ import com.wll.examplemvvm.BR;
 import com.wll.examplemvvm.R;
 import com.wll.examplemvvm.base.BaseRecyclerlAdapter;
 import com.wll.examplemvvm.base.BaseViewHolder;
-import com.wll.examplemvvm.bean.HomeNewsBean;
+import com.wll.examplemvvm.ui.homefrgment.newslist.model.HomeNewsBean;
 import com.wll.examplemvvm.databinding.ItemNewsListBinding;
 
 /**

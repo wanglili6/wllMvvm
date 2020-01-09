@@ -1,4 +1,4 @@
-package com.wll.examplemvvm.ui.homefrgment;
+package com.wll.examplemvvm.ui.homefrgment.vm;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;

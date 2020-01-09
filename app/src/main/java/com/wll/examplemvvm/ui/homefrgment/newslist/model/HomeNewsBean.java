@@ -1,4 +1,4 @@
-package com.wll.examplemvvm.bean;
+package com.wll.examplemvvm.ui.homefrgment.newslist.model;
 
 import java.util.List;
 

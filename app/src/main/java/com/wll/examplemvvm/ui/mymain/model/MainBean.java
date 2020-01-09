@@ -1,4 +1,4 @@
-package com.wll.examplemvvm.bean;
+package com.wll.examplemvvm.ui.mymain.model;
 
 import com.wll.examplemvvm.R;
 

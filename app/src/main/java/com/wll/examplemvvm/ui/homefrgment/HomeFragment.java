@@ -10,10 +10,12 @@ import androidx.viewpager.widget.ViewPager;
 import com.flyco.tablayout.listener.OnTabSelectListener;
 import com.wll.examplemvvm.R;
 import com.wll.examplemvvm.base.BaseFragment;
-import com.wll.examplemvvm.bean.BannerBean;
+import com.wll.examplemvvm.ui.homefrgment.models.BannerBean;
 import com.wll.examplemvvm.bean.basebean.Resource;
 import com.wll.examplemvvm.databinding.FragmentHomeBinding;
 import com.wll.examplemvvm.ui.homefrgment.newslist.NewsListFragment;
+import com.wll.examplemvvm.ui.homefrgment.vm.HomeViewModel;
+import com.wll.examplemvvm.ui.homefrgment.vm.SectionsViewPagerAdapter;
 import com.wll.examplemvvm.utils.GlideImageLoader;
 import com.youth.banner.BannerConfig;
 

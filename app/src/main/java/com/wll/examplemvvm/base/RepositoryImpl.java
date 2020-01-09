@@ -3,16 +3,13 @@ package com.wll.examplemvvm.base;
 import androidx.lifecycle.MutableLiveData;
 
 
-import com.wll.examplemvvm.bean.BannerBean;
-import com.wll.examplemvvm.bean.HomeNewsBean;
-import com.wll.examplemvvm.bean.HomeProjectBean;
+import com.wll.examplemvvm.ui.homefrgment.models.BannerBean;
+import com.wll.examplemvvm.ui.homefrgment.newslist.model.HomeNewsBean;
+import com.wll.examplemvvm.ui.homefrgment.models.HomeProjectBean;
 import com.wll.examplemvvm.bean.basebean.ParamsBuilder;
 import com.wll.examplemvvm.bean.basebean.Resource;
 
-import java.io.File;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 /**
  * Created by leo

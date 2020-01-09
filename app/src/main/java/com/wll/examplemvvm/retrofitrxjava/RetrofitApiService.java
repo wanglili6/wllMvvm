@@ -1,8 +1,8 @@
 package com.wll.examplemvvm.retrofitrxjava;
 
-import com.wll.examplemvvm.bean.BannerBean;
-import com.wll.examplemvvm.bean.HomeNewsBean;
-import com.wll.examplemvvm.bean.HomeProjectBean;
+import com.wll.examplemvvm.ui.homefrgment.models.BannerBean;
+import com.wll.examplemvvm.ui.homefrgment.newslist.model.HomeNewsBean;
+import com.wll.examplemvvm.ui.homefrgment.models.HomeProjectBean;
 import com.wll.examplemvvm.bean.basebean.ResponModel;
 
 import java.util.List;

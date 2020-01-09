@@ -6,6 +6,7 @@ import android.view.View;
 import com.wll.examplemvvm.R;
 import com.wll.examplemvvm.base.BaseFragment;
 import com.wll.examplemvvm.databinding.FragmentProjectListBinding;
+import com.wll.examplemvvm.ui.homefrgment.projectlist.vm.ProjectViewModel;
 
 public class ProjectListFragment extends BaseFragment<ProjectViewModel, FragmentProjectListBinding> {
     @Override

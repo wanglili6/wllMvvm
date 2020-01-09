@@ -6,7 +6,7 @@
 
         <variable
             name="dataBean"
-            type="com.wll.examplemvvm.bean.HomeNewsBean.DatasBean" />
+            type="com.wll.examplemvvm.ui.homefrgment.newslist.model.HomeNewsBean" />
 
     </data>
 

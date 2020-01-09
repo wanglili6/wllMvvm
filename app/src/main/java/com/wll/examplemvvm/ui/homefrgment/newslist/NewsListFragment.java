@@ -5,18 +5,18 @@ import android.view.View;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.Observer;
-import androidx.room.Update;
 
 import com.scwang.smartrefresh.layout.api.RefreshLayout;
 import com.scwang.smartrefresh.layout.listener.OnLoadMoreListener;
 import com.scwang.smartrefresh.layout.listener.OnRefreshListener;
 import com.wll.examplemvvm.R;
 import com.wll.examplemvvm.base.BaseFragment;
-import com.wll.examplemvvm.bean.HomeNewsBean;
+import com.wll.examplemvvm.ui.homefrgment.newslist.adapter.NewsListAdapter;
+import com.wll.examplemvvm.ui.homefrgment.newslist.model.HomeNewsBean;
 import com.wll.examplemvvm.bean.basebean.ParamsBuilder;
 import com.wll.examplemvvm.bean.basebean.Resource;
-import com.wll.examplemvvm.databinding.FragmentHomeBinding;
 import com.wll.examplemvvm.databinding.FragmentNewsListBinding;
+import com.wll.examplemvvm.ui.homefrgment.newslist.vm.NewsViewModel;
 
 import java.util.ArrayList;
 import java.util.List;

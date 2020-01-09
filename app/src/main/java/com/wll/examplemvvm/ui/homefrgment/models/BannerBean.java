@@ -1,4 +1,4 @@
-package com.wll.examplemvvm.bean;
+package com.wll.examplemvvm.ui.homefrgment.models;
 
 /**
  * 轮播图的bean

@@ -1,4 +1,4 @@
-package com.wll.examplemvvm.ui.homefrgment.projectlist;
+package com.wll.examplemvvm.ui.homefrgment.projectlist.vm;
 
 import android.app.Application;
 

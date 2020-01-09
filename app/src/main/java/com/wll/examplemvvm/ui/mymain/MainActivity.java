@@ -7,9 +7,9 @@ import androidx.fragment.app.Fragment;
 import com.flyco.tablayout.listener.CustomTabEntity;
 import com.wll.examplemvvm.R;
 import com.wll.examplemvvm.base.BaseActivity;
-import com.wll.examplemvvm.bean.basebean.TabEntity;
 import com.wll.examplemvvm.databinding.ActivityMainBinding;
 import com.wll.examplemvvm.ui.homefrgment.HomeFragment;
+import com.wll.examplemvvm.ui.mymain.vm.MainViewModel;
 
 import java.util.ArrayList;
 
