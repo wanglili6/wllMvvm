@@ -14,6 +14,7 @@ import com.wll.examplemvvm.ui.homefrgment.models.BannerBean;
 import com.wll.examplemvvm.bean.basebean.Resource;
 import com.wll.examplemvvm.databinding.FragmentHomeBinding;
 import com.wll.examplemvvm.ui.homefrgment.newslist.NewsListFragment;
+import com.wll.examplemvvm.ui.homefrgment.projectlist.ProjectListFragment;
 import com.wll.examplemvvm.ui.homefrgment.vm.HomeViewModel;
 import com.wll.examplemvvm.ui.homefrgment.vm.SectionsViewPagerAdapter;
 import com.wll.examplemvvm.utils.GlideImageLoader;
@@ -139,10 +140,12 @@ public class HomeFragment extends BaseFragment<HomeViewModel, FragmentHomeBindin
      * 初始化viewpager
      */
     private void initViewPager() {
-        mFragments.add(new NewsListFragment());
-        mFragments.add(new NewsListFragment());
-        binding.homeViewPage.setAdapter(new SectionsViewPagerAdapter(getFragmentManager(), mFragments));
+        mFragments.add(new NewsListFragment());//私藏文章
+        mFragments.add(new ProjectListFragment());//最新文章
+        SectionsViewPagerAdapter adapter = new SectionsViewPagerAdapter(getFragmentManager(), mFragments);
+        binding.homeViewPage.setAdapter(adapter);
         binding.homeViewPage.setCurrentItem(0);
+        adapter.notifyDataSetChanged();
 
     }
 

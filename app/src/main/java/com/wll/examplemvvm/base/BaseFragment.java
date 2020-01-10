@@ -85,8 +85,10 @@ public abstract class BaseFragment<VM extends BaseViewModel, VDB extends ViewDat
     }
 
 
-
-
+    /**
+     * 重写了网络请求的各个方法加载统一设定
+     * @param <T>
+     */
     public abstract class OnCallback<T> implements Resource.OnHandleCallback<T> {
         @Override
         public void onLoading(String msg) {

@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 /**
  * Created by leo
  * on 2019/11/8.
+ * 基础viewHoldel
  */
 public class BaseViewHolder extends RecyclerView.ViewHolder {
     public ViewDataBinding binding;
