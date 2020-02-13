@@ -15,7 +15,7 @@ import androidx.lifecycle.ViewModelProviders;
 import com.google.gson.JsonSyntaxException;
 import com.trello.rxlifecycle2.components.support.RxFragmentActivity;
 import com.wll.examplemvvm.R;
-import com.wll.examplemvvm.bean.basebean.Resource;
+import com.wll.examplemvvm.bean.Resource;
 import com.wll.examplemvvm.customview.CustomProgress;
 import com.wll.examplemvvm.utils.ToastUtils;
 import com.wll.examplemvvm.utils.networks.NetWorkUtils;
@@ -26,9 +26,9 @@ import java.net.ConnectException;
 import java.net.SocketTimeoutException;
 
 /**
-@author wll
-@description: baseActivity
-*/
+ * @author wll
+ * @description: baseActivity
+ */
 public abstract class BaseActivity<VM extends BaseViewModel, VDB extends ViewDataBinding> extends RxFragmentActivity
         implements View.OnClickListener {
 
@@ -51,7 +51,7 @@ public abstract class BaseActivity<VM extends BaseViewModel, VDB extends ViewDat
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this, getContentViewId());
-        binding.setLifecycleOwner(this);
+        binding.setLifecycleOwner(this);//databing与liveData配合使用
         createViewModel();
         processLogic();
         setListener();

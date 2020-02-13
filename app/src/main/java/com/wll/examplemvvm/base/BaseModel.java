@@ -6,9 +6,9 @@ import android.text.TextUtils;
 import androidx.lifecycle.MutableLiveData;
 
 import com.trello.rxlifecycle2.LifecycleTransformer;
-import com.wll.examplemvvm.bean.basebean.ParamsBuilder;
-import com.wll.examplemvvm.bean.basebean.Resource;
-import com.wll.examplemvvm.bean.basebean.ResponModel;
+import com.wll.examplemvvm.bean.ParamsBuilder;
+import com.wll.examplemvvm.bean.Resource;
+import com.wll.examplemvvm.bean.ResponModel;
 import com.wll.examplemvvm.retrofitrxjava.Interceptor.NetCacheInterceptor;
 import com.wll.examplemvvm.retrofitrxjava.Interceptor.OfflineCacheInterceptor;
 import com.wll.examplemvvm.retrofitrxjava.RetrofitApiService;

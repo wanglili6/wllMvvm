@@ -7,6 +7,7 @@
     </data>
 
     <LinearLayout
+        android:background="@color/bg_color"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
@@ -16,15 +17,16 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/dp_200" />
 
-        <com.flyco.tablayout.SegmentTabLayout
+        <com.flyco.tablayout.SlidingTabLayout
+            android:layout_marginTop="@dimen/dp_5"
             android:id="@+id/segment_tab_layout"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/dp_45"
+            android:layout_height="@dimen/dp_40"
             app:tl_textSelectColor="@color/text_pressed"
             app:tl_textUnselectColor="@color/text_gray"
             app:tl_textsize="@dimen/dp_14">
 
-        </com.flyco.tablayout.SegmentTabLayout>
+        </com.flyco.tablayout.SlidingTabLayout>
 
         <androidx.viewpager.widget.ViewPager
             android:id="@+id/home_view_page"
