@@ -6,7 +6,7 @@
 
         <variable
             name="dataBean"
-            type="com.wll.examplemvvm.ui.homefrgment.newslist.model.HomeNewsBean.DatasBean" />
+            type="com.wll.examplemvvm.fragment.homefrgment.newslist.model.HomeNewsBean.DatasBean" />
 
     </data>
     <!--阴影控件-->

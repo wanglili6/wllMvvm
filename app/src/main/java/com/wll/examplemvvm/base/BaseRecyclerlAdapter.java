@@ -227,13 +227,13 @@ public abstract class BaseRecyclerlAdapter<T> extends RecyclerView.Adapter {
         return position - headViews.size();
     }
 
-    public com.lihang.nbadapter.BaseAdapter.OnItemClickListener<T> onItemClickListener;
+    public OnItemClickListener<T> onItemClickListener;
 
-    public com.lihang.nbadapter.BaseAdapter.OnItemClickListener<T> getOnItemClickListener() {
+    public OnItemClickListener<T> getOnItemClickListener() {
         return onItemClickListener;
     }
 
-    public void setOnItemClickListener(com.lihang.nbadapter.BaseAdapter.OnItemClickListener<T> onItemClickListener) {
+    public void setOnItemClickListener(OnItemClickListener<T> onItemClickListener) {
         this.onItemClickListener = onItemClickListener;
     }
 
@@ -242,13 +242,13 @@ public abstract class BaseRecyclerlAdapter<T> extends RecyclerView.Adapter {
     }
 
 
-    public com.lihang.nbadapter.BaseAdapter.OnItemLongClickListener<T> onItemLongClickListener;
+    public OnItemLongClickListener<T> onItemLongClickListener;
 
-    public com.lihang.nbadapter.BaseAdapter.OnItemLongClickListener<T> getOnItemLongClickListener() {
+    public OnItemLongClickListener<T> getOnItemLongClickListener() {
         return onItemLongClickListener;
     }
 
-    public void setOnItemLongClickListener(com.lihang.nbadapter.BaseAdapter.OnItemLongClickListener<T> onItemLongClickListener) {
+    public void setOnItemLongClickListener(OnItemLongClickListener<T> onItemLongClickListener) {
         this.onItemLongClickListener = onItemLongClickListener;
     }
 

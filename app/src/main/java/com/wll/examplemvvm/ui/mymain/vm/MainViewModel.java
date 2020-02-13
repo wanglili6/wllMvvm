@@ -8,7 +8,7 @@ import com.flyco.tablayout.listener.CustomTabEntity;
 import com.wll.examplemvvm.base.BaseViewModel;
 import com.wll.examplemvvm.base.RepositoryImpl;
 import com.wll.examplemvvm.ui.mymain.model.MainBean;
-import com.wll.examplemvvm.bean.basebean.TabEntity;
+import com.wll.examplemvvm.bean.TabEntity;
 
 import java.util.ArrayList;
 

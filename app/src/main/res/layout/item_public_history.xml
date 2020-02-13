@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="historyDataBean"
+            type="com.wll.examplemvvm.ui.thepublic.model.PublicHistoryFaterBean.DatasBean" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.lihang.ShadowLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_3"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_3"
+            app:hl_cornerRadius="@dimen/dp_10"
+            app:hl_leftShow="false"
+            app:hl_shadowColor="@color/colorPrimary"
+            app:hl_topShow="false">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_10">
+
+                <TextView
+                    android:id="@+id/txt_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/image_zan"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@{historyDataBean.title}"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+
+                    android:id="@+id/txt_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_title"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:text="@{historyDataBean.niceDate}"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/sp_12" />
+
+
+                <ImageView
+                    android:id="@+id/image_zan"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:padding="@dimen/dp_5"
+                    android:src="@drawable/zan_click_userdetail" />
+
+            </RelativeLayout>
+
+
+        </com.lihang.ShadowLayout>
+    </LinearLayout>
+</layout>

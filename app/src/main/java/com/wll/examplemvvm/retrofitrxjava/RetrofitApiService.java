@@ -1,9 +1,11 @@
 package com.wll.examplemvvm.retrofitrxjava;
 
-import com.wll.examplemvvm.ui.homefrgment.models.BannerBean;
-import com.wll.examplemvvm.ui.homefrgment.newslist.model.HomeNewsBean;
-import com.wll.examplemvvm.ui.homefrgment.projectlist.model.HomeProjectBean;
-import com.wll.examplemvvm.bean.basebean.ResponModel;
+import com.wll.examplemvvm.fragment.homefrgment.models.BannerBean;
+import com.wll.examplemvvm.fragment.homefrgment.newslist.model.HomeNewsBean;
+import com.wll.examplemvvm.fragment.homefrgment.projectlist.model.HomeProjectBean;
+import com.wll.examplemvvm.bean.ResponModel;
+import com.wll.examplemvvm.fragment.publichao.model.PublicHaoBean;
+import com.wll.examplemvvm.ui.thepublic.model.PublicHistoryFaterBean;
 
 import java.util.List;
 
@@ -28,6 +30,14 @@ public interface RetrofitApiService {
     //首页--最近项目
     @GET("article/listproject/{curPage}/json")
     Observable<ResponModel<HomeProjectBean>> getPeojectList(@Path("curPage") int page);
+
+    //公众号分类列表
+    @GET("wxarticle/chapters/json")
+    Observable<ResponModel<List<PublicHaoBean>>> getPublictList();
+
+    //公众号历史列表
+    @GET("wxarticle/list/{id}/{page}/json")
+    Observable<ResponModel<PublicHistoryFaterBean>> getPublictHistoryList(@Path("id") int id, @Path("page") int page);
 
 //    //收藏文章列表
 //    @GET("lg/collect/list/{curPage}/json")

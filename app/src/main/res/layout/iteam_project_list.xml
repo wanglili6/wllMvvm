@@ -6,7 +6,7 @@
 
         <variable
             name="projectBean"
-            type="com.wll.examplemvvm.ui.homefrgment.projectlist.model.ProjectListBean" />
+            type="com.wll.examplemvvm.fragment.homefrgment.projectlist.model.ProjectListBean" />
     </data>
 
     <com.lihang.ShadowLayout

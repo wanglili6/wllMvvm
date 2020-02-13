@@ -3,7 +3,7 @@ package com.wll.examplemvvm.retrofitrxjava.uploadutils;
 import androidx.lifecycle.MutableLiveData;
 
 
-import com.wll.examplemvvm.bean.basebean.Resource;
+import com.wll.examplemvvm.bean.Resource;
 
 import java.io.File;
 import java.io.IOException;

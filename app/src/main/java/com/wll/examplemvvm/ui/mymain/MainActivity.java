@@ -8,7 +8,10 @@ import com.flyco.tablayout.listener.CustomTabEntity;
 import com.wll.examplemvvm.R;
 import com.wll.examplemvvm.base.BaseActivity;
 import com.wll.examplemvvm.databinding.ActivityMainBinding;
-import com.wll.examplemvvm.ui.homefrgment.HomeFragment;
+import com.wll.examplemvvm.fragment.homefrgment.HomeFragment;
+import com.wll.examplemvvm.fragment.product.ProductFragment;
+import com.wll.examplemvvm.fragment.publichao.PublicHaoFragment;
+import com.wll.examplemvvm.fragment.system.SystemFragment;
 import com.wll.examplemvvm.ui.mymain.vm.MainViewModel;
 
 import java.util.ArrayList;
@@ -39,9 +42,9 @@ public class MainActivity extends BaseActivity<MainViewModel, ActivityMainBindin
     private void initData() {
         //添加fragment
         mFragments.add(new HomeFragment());
-        mFragments.add(new HomeFragment());
-        mFragments.add(new HomeFragment());
-        mFragments.add(new HomeFragment());
+        mFragments.add(new PublicHaoFragment());
+        mFragments.add(new SystemFragment());
+        mFragments.add(new ProductFragment());
         //添加tab
         ArrayList<CustomTabEntity> tabs = mViewModel.getTabs();
         if (null != tabs) {

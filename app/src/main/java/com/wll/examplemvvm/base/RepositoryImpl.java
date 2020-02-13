@@ -3,11 +3,13 @@ package com.wll.examplemvvm.base;
 import androidx.lifecycle.MutableLiveData;
 
 
-import com.wll.examplemvvm.ui.homefrgment.models.BannerBean;
-import com.wll.examplemvvm.ui.homefrgment.newslist.model.HomeNewsBean;
-import com.wll.examplemvvm.ui.homefrgment.projectlist.model.HomeProjectBean;
-import com.wll.examplemvvm.bean.basebean.ParamsBuilder;
-import com.wll.examplemvvm.bean.basebean.Resource;
+import com.wll.examplemvvm.fragment.homefrgment.models.BannerBean;
+import com.wll.examplemvvm.fragment.homefrgment.newslist.model.HomeNewsBean;
+import com.wll.examplemvvm.fragment.homefrgment.projectlist.model.HomeProjectBean;
+import com.wll.examplemvvm.bean.ParamsBuilder;
+import com.wll.examplemvvm.bean.Resource;
+import com.wll.examplemvvm.fragment.publichao.model.PublicHaoBean;
+import com.wll.examplemvvm.ui.thepublic.model.PublicHistoryFaterBean;
 
 import java.util.List;
 
@@ -37,6 +39,21 @@ public class RepositoryImpl extends BaseModel {
         return observeGo(getApiService().getPeojectList(page), liveData, paramsBuilder);
     }
 
+    /**
+     * 获取公众号分类列表
+     */
+    public MutableLiveData<Resource<List<PublicHaoBean>>> getPublictypeList() {
+        MutableLiveData<Resource<List<PublicHaoBean>>> liveData = new MutableLiveData<>();
+        return observeGo(getApiService().getPublictList(), liveData);
+    }
+
+    /**
+     * 获取公众号分类列表
+     */
+    public MutableLiveData<Resource<PublicHistoryFaterBean>> getPublicHistoryList(int id, int page) {
+        MutableLiveData<Resource<PublicHistoryFaterBean>> liveData = new MutableLiveData<>();
+        return observeGo(getApiService().getPublictHistoryList(id, page), liveData);
+    }
 //
 //    //获取收藏列表
 //    public MutableLiveData<Resource<HomeFatherBean>> getCollectArticles(int curPage, ParamsBuilder paramsBuilder) {

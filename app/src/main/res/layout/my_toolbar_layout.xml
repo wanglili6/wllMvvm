@@ -9,7 +9,7 @@
         android:id="@+id/leoBar"
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
-        android:background="#1EB0F1"
+        android:background="@color/colorPrimary"
         android:orientation="vertical">
 
         <RelativeLayout
