@@ -37,7 +37,6 @@ public abstract class BaseActivity<VM extends BaseViewModel, VDB extends ViewDat
     protected abstract void processLogic();
     //所有监听放这里
     protected abstract void setListener();
-
     protected VM mViewModel;
     protected VDB binding;
 
