@@ -32,13 +32,10 @@ import java.net.SocketTimeoutException;
 public abstract class BaseActivity<VM extends BaseViewModel, VDB extends ViewDataBinding> extends RxFragmentActivity implements View.OnClickListener {
     //获取当前activity布局文件
     protected abstract int getContentViewId();
-
     //处理逻辑业务
     protected abstract void processLogic();
-
     //所有监听放这里
     protected abstract void setListener();
-
 
     protected VM mViewModel;
     protected VDB binding;
